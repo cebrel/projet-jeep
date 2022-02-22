@@ -600,3 +600,48 @@
     autoshowTheme.init();
 
 })(jQuery);
+// 360
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "/assets/img/image360.jpeg",
+    "autoLoad":true
+});
+
+
+// change-color
+function change1()
+	{
+
+document.getElementById('pic').src='/assets/images-color/jeep2.jpg';
+
+	}
+
+	function change2()
+	{
+
+document.getElementById('pic').src='/assets/images-color/jeep3.jpg';
+
+	}
+
+	function change3()
+	{
+
+document.getElementById('pic').src='/assets/images-color/jeep4.jpg';
+
+	}
+
+	function change4()
+	{
+
+document.getElementById('pic').src='/assets/images-color/jeep5.jpg';
+
+	}
+	function change5()
+	{
+
+document.getElementById('pic').src='/assets/images-color/jeep6.jpg';
+
+	}
+	
+	
+	

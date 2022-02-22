@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#image360 {
+	max-width: 50%;
+	margin: 200px auto;
+}
+
+#image360 img {
+	/* display: block; */
+	width: 50%;
+}

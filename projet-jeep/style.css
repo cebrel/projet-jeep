@@ -1766,7 +1766,14 @@ body .alert strong { border: none; }
 .dark-section .form-block label, .primary-section .form-block label { color: #fff; }
 
 .section-title-wrapper {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 0; 
+}
+.pano{
+  margin: 0 0 0 0;
+   background-color: white;
+}
+.margin-view{
+  margin-bottom: 20px;
 }
 .big-space {
   width: 100%;
@@ -4523,7 +4530,7 @@ support for no js
 }
 
 .section-gallery .tab-content > .tab-pane {
-  padding: 30px 0 80px;
+  /* padding: 30px 0 80px; */
   visibility: hidden;
   height: 0;
   display: none;
@@ -5036,7 +5043,7 @@ support for no js
     width: 100%;
 }
 .interior-container .section-title-wrapper {
-    position: absolute;
+    /* position: absolute; */
     z-index: 9;
     background-color: rgba(0, 0, 0, 1);
     padding: 20px 60px;
@@ -5284,7 +5291,7 @@ support for no js
 -------------------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
   .section-block, .main-header.fullwidth .container {
-	padding: 0 35px;
+	/* padding: 0 35px; */
    }
   .main-header::after {
     clear: both;
@@ -6178,4 +6185,84 @@ support for no js
         line-height: 14px;
     }
 
+}
+
+/* 360 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#image360 {
+	max-width: 50%;
+	margin: 200px auto;
+}
+
+#image360 img {
+	display: block;
+	width: 100%;
+}
+
+#panorama{
+  height: 600px;
+  width: 100vw;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+
+}
+
+/* choix de couleur style */
+#pic{
+	text-align: center;
+}
+#btn1{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #F4F6F5	;
+	border: 2px solid #3e3e3e;
+  padding: 0 0;
+
+}
+#btn2{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #5B5C5E;
+	border: 2px solid #3e3e3e;
+  padding: 0 0;
+
+}
+#btn3{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #B14924 ;
+	border: 2px solid #3e3e3e;
+  padding: 0 0;
+
+}
+#btn4{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #002C5B ;
+	border: 2px solid #3e3e3e;
+  padding: 0 0;
+
+}
+#btn5{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #E0BD00  ;
+	border: 2px solid #3e3e3e;
+  padding: 0 0;
+}
+.btn-style{
+  margin-bottom: 160px;
+  
+  
 }

@@ -6,16 +6,18 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>AutoShow - Car Shoowroom & Dealer Automotive Responsive HTML5 Template</title>
-    <meta name="description" content="AutoShow is a full responsive template. The template has been created especially for automotive dealers, car showroom and auto motor retailers.">
-    <meta name="keywords" content="car showroom, auto dealer, automotive, mechanic auto shop, automotive, mechanic workshop">
-    <meta name="author" content="https://themeforest.net/user/quartzlab">
+    <title>Jeep-Car</title>
+    <meta name="description" content="Jeep-website">
+    <meta name="keywords" content="Jeep-automobile">
+    
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/icon/logokouidry.png"> 
@@ -41,12 +43,12 @@
     </script>
 </head>
 <body>
-<div class="animsition">
+  <div class="animsition">
     <div class="site-wrapper">
         <!-- header-area -->
         <header id="header" class="main-header fullwidth"> 
             <div class="container">
-                <!-- <a class="main-logo" href="index.html"><img src="assets/img/logo.svg" alt="autoshow"></a> -->
+              <a class="main-logo" href="index-2.html"><img src="assets/img/jeeploggo1.webp" alt="autoshow"></a>
                 <ul class="header-buttons">
                     <li class="dropdown">
                       <a class="user-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
@@ -325,7 +327,7 @@
             <div class="section-space"></div>
 
         </section>
-
+        
         <!-- exterior-area -->
         <section class="white-section section-block">
             <div class="section-space"></div>
@@ -347,51 +349,34 @@
                               
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="feature">
-                                    
-                                   
-                                     <div class="car-interest">
+                                  
+                                   <!-- 360 -->
+  <div class="container">
+    <div class="row">
+    <div id="image360"></div>
+  </div>
+</div>
 
-                                        <div class="car-interest-wrapper">
-                                            <img src="assets/img/models/image-exterior-jeep.png" alt="Model 1">
-                                            <!-- <ul>
-                                                <li class="interest-point" style="bottom: 62%;left: 38%;">
-                                                    <a class="car-img-replace" href="#0">More</a>
-                                                    <div class="car-more-info car-top">
-                                                        <img class="car-more-image" src="assets/img/box/box2.jpg" alt=""/>
-                                                        <h3>Performance</h3>
-                                                        <p>
-                                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                                        </p>
-                                                        <a href="#0" class="interest-close-info car-img-replace">Close</a>
-                                                    </div>
-                                                </li> 
-
-                                                <li class="interest-point" style="top: 44%; left: 46%;">
-                                                    <a class="car-img-replace" href="#0">More</a>
-                                                    <div class="car-more-info car-right">
-                                                        <img class="car-more-image" src="assets/img/box/box3.jpg" alt=""/>
-                                                        <h3>Comfort</h3>
-                                                        <p>
-                                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                                        </p>
-                                                        <a href="#0" class="interest-close-info car-img-replace">Close</a>
-                                                    </div>
-                                                </li> 
-
-                                                <li class="interest-point" style="top: 32%;right: 1%;">
-                                                    <a class="car-img-replace" href="#0">More</a>
-                                                    <div class="car-more-info car-left">
-                                                        <img class="car-more-image" src="assets/img/box/box1.jpg" alt=""/>
-                                                        <h3>Headlight</h3>
-                                                        <p>
-                                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                                        </p>
-                                                        <a href="#0" class="interest-close-info car-img-replace">Close</a>
-                                                    </div>
-                                                </li> 
-                                            </ul> -->
-                                        </div> 
-                                    </div> 
+    
+    <script src="assets/js/product-viewer.js"></script>
+    <script>
+      var productViewer = new ProductViewer ({
+        element: document.getElementById('image360'),
+        imagePath: './images',
+        filePrefix: 'img',
+        fileExtension: '.jpg'
+      });
+  
+      // if you want to see it will roted 360 deg once it loaded then you have to write some extra code
+  
+      ProductViewer.once('loaded', function (){
+        ProductViewer.animate360();
+      })
+      
+  
+    </script>
+    <!-- 360end -->
+    
                                 </div>
                                 <div role="tabpanel" class="tab-pane gallery" id="gallery">
                                     <div class="row mosaic gallery">
@@ -467,106 +452,113 @@
                             </div>
 
                         </div>
-                    </div>      
+                    </div>    
+                    
+                    
                 </div>
             </div>
-
+            
+        <!-- couleur de voiture -->
+      <section>
+        <div class="container text-center">
+          <div class="col-md-12 text-center  pano">
+            <h3 class="section-title">Available colors</h3>
+            <p class="margin-view">choose your color</p>
+            
+        </div>
+          <img id="pic" src="/assets/images-color/jeep1.jpg" >
+        
+        
+        
+        
+        
+        
+        <div class="btn-style">
+          <button id="btn1" onclick="change1()"></button>
+          <button id="btn2" onclick="change2()"></button>
+          <button  id="btn3" onclick="change3()"></button>
+          <button id="btn4" onclick="change4()"></button>
+          <button  id="btn5" onclick="change5()"></button>
+        
+        
+        </div>
+      
+      </div>
         </section>
-        
-        
+       
+    
+        <!-- panorama 360 -->
+        <section class="my-5  bg-none">
+          <div class="col-md-12 text-center  pano">
+            <h3 class="section-title">View Panorama 360°</h3>
+            <p class="margin-view">He seduces you with his provocative look.</p>
+            
+        </div>
+        <div   id="panorama"></div>
+      </section>
+      
         <!-- interior-area -->
         <section class="dark-section"> 
+         
+          <div class="interior-container">
 
-            <div class="interior-container">
+              <div class="section-title-wrapper">
+                  <div class="container">
+                      <div class="mid-space"></div>
+                      <div class="row gallery">
+                          <div class="col-md-6">
+                              <h3 class="section-title">Hidden in his intelligence.</h3>
+                              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                          </div>
+                          <div class="col-md-2 wow fadeIn" data-wow-delay=".3s">
+                              <div class="image-holder">
+                                  <a href="assets/img/gallery/gallery-interior1.jpg" class="image-link">
+                                      <img src="assets/img/gallery/gallery-interior1.jpg" alt="">
+                                      <div class="car-overlay">
+                                          <span class="link-holder">
+                                              <i class="fa fa-eye"></i>
+                                          </span>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-2 wow fadeIn" data-wow-delay=".6s">
+                              <div class="image-holder">
+                                  <a href="assets/img/gallery/gallery-interior2.jpg" class="image-link">
+                                      <img src="assets/img/gallery/gallery-interior2.jpg" alt="">
+                                      <div class="car-overlay">
+                                          <span class="link-holder">
+                                              <i class="fa fa-eye"></i>
+                                          </span>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-2 wow fadeIn" data-wow-delay=".9s">
 
-                <div class="section-title-wrapper">
-                    <div class="container">
-                        <div class="mid-space"></div>
-                        <div class="row gallery">
-                            <div class="col-md-6">
-                                <h3 class="section-title">Hidden in his intelligence.</h3>
-                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                            </div>
-                            <div class="col-md-2 wow fadeIn" data-wow-delay=".3s">
-                                <div class="image-holder">
-                                    <a href="assets/img/gallery/gallery-interior1.jpg" class="image-link">
-                                        <img src="assets/img/gallery/gallery-interior1.jpg" alt="">
-                                        <div class="car-overlay">
-                                            <span class="link-holder">
-                                                <i class="fa fa-eye"></i>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 wow fadeIn" data-wow-delay=".6s">
-                                <div class="image-holder">
-                                    <a href="assets/img/gallery/gallery-interior2.jpg" class="image-link">
-                                        <img src="assets/img/gallery/gallery-interior2.jpg" alt="">
-                                        <div class="car-overlay">
-                                            <span class="link-holder">
-                                                <i class="fa fa-eye"></i>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-2 wow fadeIn" data-wow-delay=".9s">
+                              <div class="image-holder active">
+                                  <a href="assets/img/gallery/gallery-interior3.jpg" class="image-link">
+                                      <img src="assets/img/gallery/gallery-interior3.jpg" alt="">
+                                      <div class="car-overlay">
+                                          <span class="link-holder">
+                                              View Gallery
+                                          </span>
+                                      </div>
+                                  </a>
+                              </div>
 
-                                <div class="image-holder active">
-                                    <a href="assets/img/gallery/gallery-interior3.jpg" class="image-link">
-                                        <img src="assets/img/gallery/gallery-interior3.jpg" alt="">
-                                        <div class="car-overlay">
-                                            <span class="link-holder">
-                                                View Gallery
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
+                              <a href="assets/img/gallery/gallery-interior4.jpg" class="image-link"></a>
+                          </div>
+                      </div>
+                      <div class="mid-space"></div>
+                  </div>
+              </div>
+              
+             
 
-                                <a href="assets/img/gallery/gallery-interior4.jpg" class="image-link"></a>
-                            </div>
-                        </div>
-                        <div class="mid-space"></div>
-                    </div>
-                </div>
+          </div>
 
-                <div class="car-interest">
-                    <div class="car-interest-wrapper">
-                        <div class="interior-bg" style="background-image: url('assets/img/gallery/interior-cover.jpg');"></div>
-                        <img src="assets/img/gallery/interior-spacing.png" alt="Interior">
-                        <ul>
-                            <li class="interest-point" style="top: 20%; left: 77%;">
-                                <a class="car-img-replace" href="#0">More</a>
-                                <div class="car-more-info car-bottom">
-                                    <img class="car-more-image" src="assets/img/gallery/gallery-interior2.jpg" alt=""/>
-                                    <h3>Comfort</h3>
-                                    <p>
-                                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                    </p>
-                                    <a href="#0" class="interest-close-info car-img-replace">Close</a>
-                                </div>
-                            </li>
-
-                            <li class="interest-point" style="top: 29%; left: 50%;">
-                                <a class="car-img-replace" href="#0">More</a>
-                                <div class="car-more-info car-bottom">
-                                    <img class="car-more-image" src="assets/img/gallery/gallery-interior1.jpg" alt=""/>
-                                    <h3>Performance</h3>
-                                    <p>
-                                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
-                                    </p>
-                                    <a href="#0" class="interest-close-info car-img-replace">Close</a>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
+      </section>
 
         <!-- specs-area -->
         <section class="light-section section-block">
@@ -1409,6 +1401,7 @@
             </ul>
         </div>
         <!-- footer-area -->
+        
         <footer class="site-footer">
             <div class="footer-area">
                 <div class="container">
@@ -1419,11 +1412,11 @@
                                 <h3 class="widget-title">All Models</h3>
                                 <div class="quick-links">                              
                                         <ul>
-                                            <li><a href="#">Autoshow Model 1</a></li>
-                                            <li><a href="#">Autoshow Model 2</a></li>
-                                            <li><a href="#">Autoshow Model 3</a></li>
-                                            <li><a href="#">Autoshow Model 4</a></li>
-                                            <li><a href="#">Autoshow Model 5</a></li>
+                                            <li><a href="#">Jeep Model 1</a></li>
+                                            <li><a href="#">Jeep Model 2</a></li>
+                                            <li><a href="#">Jeep Model 3</a></li>
+                                            <li><a href="#">Jeep Model 4</a></li>
+                                            <li><a href="#">Jeep Model 5</a></li>
                                         </ul>                              
                                 </div>
                             </div>
@@ -1499,7 +1492,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="copyright-text">
-                            © Autoshow. All Rights Reserved.
+                            © KouidryM. All Rights Reserved.
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -1517,7 +1510,8 @@
     </div>
 </div>
 <!-- Javascript -->
-<script src="assets/js/product-viewer.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bootstrap-select.min.js"></script>
