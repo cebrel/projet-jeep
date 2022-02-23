@@ -603,7 +603,7 @@
 // 360
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "/assets/img/image360.jpeg",
+    "panorama": "/projet-jeep/assets/img/36000.png",
     "autoLoad":true
 });
 
@@ -612,34 +612,34 @@ pannellum.viewer('panorama', {
 function change1()
 	{
 
-document.getElementById('pic').src='/assets/images-color/jeep2.jpg';
+document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep2.jpg';
 
 	}
 
 	function change2()
 	{
 
-document.getElementById('pic').src='/assets/images-color/jeep3.jpg';
+document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep3.jpg';
 
 	}
 
 	function change3()
 	{
 
-document.getElementById('pic').src='/assets/images-color/jeep4.jpg';
+document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep4.jpg';
 
 	}
 
 	function change4()
 	{
 
-document.getElementById('pic').src='/assets/images-color/jeep5.jpg';
+document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep5.jpg';
 
 	}
 	function change5()
 	{
 
-document.getElementById('pic').src='/assets/images-color/jeep6.jpg';
+document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep6.jpg';
 
 	}
 	

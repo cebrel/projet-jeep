@@ -4004,7 +4004,7 @@ support for no js
   height: 100%;
   padding-top: 10px;
   transition: all .4s;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .car-carousel .owl-item:not(.active) { opacity: .6; }
 .car-carousel .owl-item:not(.active) .car { background-color: #f1f3f7; }
@@ -4530,7 +4530,7 @@ support for no js
 }
 
 .section-gallery .tab-content > .tab-pane {
-  /* padding: 30px 0 80px; */
+  padding: 30px 0 80px;
   visibility: hidden;
   height: 0;
   display: none;
@@ -6197,15 +6197,19 @@ support for no js
 #image360 {
 	max-width: 50%;
 	margin: 200px auto;
+  
+  
 }
 
 #image360 img {
 	display: block;
 	width: 100%;
+  
+  
 }
 
 #panorama{
-  height: 600px;
+  height: 900px;
   width: 100vw;
   margin-bottom: 0;
   margin-top: 0;
