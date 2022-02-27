@@ -600,11 +600,12 @@
     autoshowTheme.init();
 
 })(jQuery);
-// 360
+//panorama 360
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "/projet-jeep/assets/img/36000.png",
-    "autoLoad":true
+    "panorama": "/projet-jeep/assets/img/newimage360.jpg",
+    "autoLoad":true,
+    
 });
 
 

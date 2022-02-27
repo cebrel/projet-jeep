@@ -25,7 +25,8 @@ img { height: auto; max-width: 100%; vertical-align: middle; -ms-interpolation-m
 p { margin: 0 0 20px; line-height: 1.7; }
 strong,
 b,
-cite { font-weight: bold; }
+cite { font-weight: bold;
+  color: #741724; }
 dfn,
 cite,
 em,
@@ -415,7 +416,7 @@ button.button,
 input[type="button"],
 input[type="submit"],
 a.button {
-	background-color: #226d95;
+	background-color: #741724;
 	top: 0;
 	padding: 17px 40px;
     line-height: 14px;
@@ -473,8 +474,8 @@ button.button.gray,
 input[type="button"].gray,
 input[type="submit"].gray,
 a.button.gray {
-	background-color: #f1f3f7;
-	color: #666;
+	background-color: #851E20;
+	color: #fff;
 	box-shadow: none;
 }
 
@@ -482,7 +483,8 @@ button.button.gray:hover,
 input[type="button"].gray:hover,
 input[type="submit"].gray:hover,
 a.button.gray:hover {
-	background-color: #f7f9fb;
+	background-color:#041244 ;
+  
 }
 
 .button.full-width {
@@ -591,6 +593,7 @@ body .button.big i {
   position: absolute;
   left: 0;
   top: 1px;
+  background-color: #fff;
 }
 
 .checkbox input + label span.checkbox-icon:after {
@@ -1722,7 +1725,7 @@ body .alert strong { border: none; }
   margin: 10px 0 0 0;
   line-height: 24px;
   font-weight: 300;
-  color: #696e77;
+  color: #fff;
 }
 .section-title-wrapper .section-title {
   line-height: 24px;
@@ -1752,11 +1755,11 @@ body .alert strong { border: none; }
 }
 
 .dark-section {
-  background: #2E3237;
+  background: #041244;
 }
 
 .dark-section .section-title, .primary-section .section-title {
-  color: #ffffff;
+  color: #741724;
 }
 
 .dark-section p, .dark-section label, .primary-section p, .primary-section label {
@@ -2289,7 +2292,7 @@ body .alert strong { border: none; }
   opacity: 0;
 }
 .primary-nav .see-all a {
-  color: #5b7f95;
+  color: #041244;
 }
 .primary-nav .nav-gallery .nav-item {
   height: 80px;
@@ -2613,7 +2616,7 @@ support for no js
 	color: #08213e;
 }
 .site-wrapper.transparent-header .slider-content h2 span { 
-	color: #a4d7f3;
+	color: #041244;
 }
 .slider-content p {
   font-size: 20px;
@@ -2874,7 +2877,7 @@ support for no js
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #226d95;
+  background-color: #041244;
   color: #fefefe;
   border-radius: 4px;
    
@@ -3117,7 +3120,7 @@ support for no js
     padding-top: 10px;
     transition: all .4s;
     border: 1px solid #f2f2f2;
-    margin-bottom: 15px;
+    
 }
 
 .car-listing-list .car {
@@ -3227,7 +3230,7 @@ support for no js
 .car-row-class {
 	padding-bottom: 20px;
 	padding-top: 20px;
-	border-bottom: 1px solid #f2f2f2;
+	
 }
 
 @media only screen and (min-width: 600px) {
@@ -3697,9 +3700,10 @@ support for no js
   margin-bottom: 20px;
   padding: 0 0 10px;
   position: relative;
+  
 }
 .widget-title::before {
-  background: #226d95 none repeat scroll 0 0;
+  background: #841820 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -4016,7 +4020,7 @@ support for no js
 .car > a {
   position: relative;
   display: block;
-  margin: 0 10px 0;
+  
   overflow: hidden;
 }
 .car img {
@@ -4150,6 +4154,11 @@ support for no js
     background-color: #febe42;
     border-radius: 4px;
     margin-right: 6px;
+}
+.rotate{
+  height: 50px;
+  width: 50px;
+  margin-top: -9px;
 }
 .star-rating .star {
 	position: relative;
@@ -5109,7 +5118,7 @@ support for no js
 -------------------------------------------------------------- */
 .site-footer .footer-area {
   border-top: 1px solid #eaebf0;
-  background: #fff;
+  background: #041244;
   padding: 80px 35px;
 }
 
@@ -5119,7 +5128,7 @@ support for no js
 }
 
 .site-footer .footer-area .widget a {
-  color: inherit;
+  color: #fff;
 }
 
 .site-footer .footer-area .widget-title {
@@ -5127,6 +5136,7 @@ support for no js
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #841820;
 }
 .site-footer .footer-area .quick-links ul { margin:0; list-style-type: none; }
 .site-footer .footer-area .quick-links ul li { 
@@ -5143,6 +5153,7 @@ support for no js
   font-family: FontAwesome;
   margin-right: 5px;
   content: '\f105';
+  color: #fff;
 }
 
 .site-footer .copyright {
@@ -5211,12 +5222,14 @@ support for no js
 /* Dealer Finder */
 .dealerfinder {
     display: inline-block;
+    color: #841820;
 }
 .dealerfinder .section-title {
 	font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: #841820;
 }
 .dealerfinder .input-group {
     display: flex;
@@ -5247,7 +5260,7 @@ support for no js
     letter-spacing: 0;
 }
 .dealerfinder button {
-    background-color: #586981;
+    background-color: #841820;
     border-radius: 4px;
     height: 50px;
     min-width: 48px;
@@ -5261,7 +5274,7 @@ support for no js
     padding: 17px 22px;
 }
 .dealerfinder button:hover {
-    background-color: #226d95;
+    background-color: #841820;
 }
 .dealerfinder .checkbox {
     cursor: pointer;
@@ -6204,6 +6217,7 @@ support for no js
 #image360 img {
 	display: block;
 	width: 100%;
+  margin-top: -150px;
   
   
 }
@@ -6270,3 +6284,42 @@ support for no js
   
   
 }
+.pnlm-about-msg {
+  width: 0;
+  height: 0;
+  padding: 0;
+  display: none;
+  
+}
+.pnlm-about-msg a { 
+  display: none; 
+  }
+
+  .car-name{
+    color:#000;
+    text-align: center;
+    padding-bottom: 10px;
+    
+  }
+  .more-btn{
+    display: block;
+    width: 100%;
+    background: grey;
+    color: white;
+    height: 28px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 10px;
+    text-align: right;
+    -moz-text-decoration-color: white;
+    text-decoration-color: white;
+    width: 100%;
+  }
+  .icon{
+    color:#002C5B;
+    
+  }
