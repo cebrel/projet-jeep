@@ -18,6 +18,8 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
     
 
     <!-- Favicon and Touch Icons  -->
@@ -49,7 +51,7 @@
             <!-- header-area -->
             <header id="header" class="main-header fullwidth">
                 <div class="container">
-                    <a class="main-logo" href="index-2.html"><img src="assets/img/jeeploggo1.webp" alt="autoshow"></a>
+                    <a class="main-logo" href="#"><img src="assets/img/logo-continental.jpg" alt="autoshow"></a>
                     <ul class="header-buttons">
                         <li class="dropdown">
                           <!-- <a class="user-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user-circle" aria-hidden="true"></i></a> -->
@@ -74,7 +76,7 @@
                                         <a class="nav-item" href="model.html">
                                             <img src="assets/images-model/cheroke1.png" alt="Model1">
                                             <h3>Model1</h3>
-                                            <p class="price">240,000<br /><small>prices starting from </small></p>
+                                            <p class="price">270,000<br /><small>prices starting from </small></p>
                                             <p class="tech">
                                                 <span><i class="fa fa-gears" title="Motor power"></i> <small>200 hp</small> </span>
                                                 <span><i class="fa fa-dashboard" title="0 - 100 km / h acceleration"></i> <small>4,6 s</small> </span>
@@ -224,7 +226,7 @@
                                 </ul>
                             </li>
     
-                            <li class="has-children">
+                            <!-- <li class="has-children">
                                 <a>Pages</a>
                                 <ul class="dropdown-nav is-hidden">
                                     <li class="go-back"><a href="#0">Menu</a></li>
@@ -234,7 +236,7 @@
                                     <li><a href="pages-404.html">404 Page</a></li>
                                     <li><a href="pages-contact.html">Contact</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="has-children">
                                 <a>Blog</a>
                                 <ul class="dropdown-nav is-hidden">
@@ -260,7 +262,7 @@
         
         <!-- model-area -->
         <div class="page-title-wrapper">
-            <div class="section-bg" style="background-image: url('assets/img/slider/slider1.jpg');"></div>
+            <div class="section-bg" style="background-image: url('assets/img/slider/wrangler-model.jpg');"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
@@ -353,17 +355,38 @@
                                   
                                    <!-- 360 -->
                                    
+
+
+
+                                   
   <div class="container">
     <div class="row text-center"> 
         
-        <img class="rotate" src="/projet-jeep/assets/icon/rotate360.png" alt="">
+        <img  class="rotate" src="/projet-jeep/assets/icon/rotate360.png" alt="">
 
         <h4>EXPLORE 360</h4>
         
+        
     </div>
+    <button onclick="myFunction()">Try it</button>
+    
+        <script>
+            function myFunction() {
+              var x = document.getElementById('myDIV');
+              if (x.style.visibility === 'hidden') {
+                x.style.visibility = 'visible';
+              } else {
+                x.style.visibility = 'hidden';
+              }
+            }
+            </script>
+            
     <div class="row">
-    <div id="image360"></div>
-   
+        
+        
+        <div class="background" id="myDIV">
+    <div id="image360" ></div>
+</div>
   </div>
 
 </div>
@@ -383,7 +406,7 @@
       ProductViewer.once('loaded', function (){
         ProductViewer.animate360();
       })
-      
+    
   
     </script>
     <!-- 360end -->
@@ -477,7 +500,7 @@
             <p class="margin-view">Choose your color</p>
             
         </div>
-          <img id="pic" src="/projet-jeep/assets/images-color/jeep1.jpg" >
+          <img id="pic" src="./assets/images-color/jeep1.jpg" >
         
         
         
@@ -500,11 +523,17 @@
     
         <!-- panorama 360 -->
         <section class="my-5  bg-none">
-          <div class="col-md-12 text-center  pano">
-            <h3 class="section-title">Expérience 360°</h3>
-            <p class="margin-view">He seduces you with his provocative look.</p>
             
-        </div>
+          <div class=" col-md-12 text-center item pano">
+              
+            
+            <span class="section-title  " style="color: #041244;">Expérience 360°</span>
+            <img class="rotate"  src="./assets/img/mouse.png" alt="">
+        
+        
+            <p class="margin-view">He seduces you with his provocative look.</p>
+        
+    </div>
         <div   id="panorama"></div>
       </section>
       
@@ -571,39 +600,39 @@
 
       </section>
 
-        <!-- specs-area -->
-        <section class="light-section section-block">
+            <!-- specs-area -->
+            <section class="light-section section-block">
 
-            <div class="section-space"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center section-title-wrapper">
-                        <h3 class="section-title">Technicial Specifications</h3>
-                        <p>He seduces you with his provocative look.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div aria-multiselectable="true" class="panel-group" id="accordion_reg" role="tablist">
-                        <div>
-                            <table class="specs-table">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <h4>MODEL</h4>
-                                        </th>
-                                        <th>
-                                            <h5>Gasoline XCI 160 (128hp)</h5>
-                                        </th>
-                                        <th>
-                                            <h5>Diesel Engine XDI 160 (115hp)</h5>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                <div class="section-space"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center section-title-wrapper">
+                            <h3 class="section-title">Technicial Specifications</h3>
+                            <p>He seduces you with his provocative look.</p>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="Engine" role="tab">
-                            <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Engine-view" role="button">Engine Specifications</a></h4></div>
+                    </div>
+                    <div class="row">
+                        <div aria-multiselectable="true" class="panel-group" id="accordion_reg" role="tablist">
+                            <div>
+                                <table class="specs-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <h4>FINITION</h4>
+                                            </th>
+                                            <th>
+                                                <h5>LONGITUDE</h5>
+                                            </th>
+                                            <th>
+                                                <h5>LIMITED</h5>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="Engine" role="tab">
+                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Engine-view" role="button">CARACTÉRISTIQUES</a></h4></div>
                             <div aria-labelledby="Engine" class="panel-collapse collapse" id="Engine-view" role="tabpanel" aria-expanded="false" style="height: 0px;">
                                 <table class="specs-table">
                                     <colgroup>
@@ -613,30 +642,30 @@
                                     </colgroup>
                                     <tbody>                                       
                                         <tr class="multi-child">
-                                            <td>Engine Description</td>
+                                            <td>Motorisation</td>
                                             <td >
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
+                                                    1.6 MULTIJET 130CV MTX FWD
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
+                                                    1.6 MULTIJET 130CV MTX FWD
                                                 </p>
                                             </td>
                                            
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Drivetrain</td>
+                                            <td>Carburant</td>
                                             <td >
                                                 <p>
-                                                    All wheel drive
+                                                    DIIESEL
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    All wheel drive
+                                            DIESEL
                                                 </p>
                                             </td>
                                           
@@ -658,135 +687,174 @@
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Engine Displacement</td>
+                                            <td>Cylindrée (cm3
+                                                )</td>
                                             <td >
                                                 <p>
-                                                    1969 cc
+                                                    1597
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    1969 cc
+                                                   1597
                                                 </p>
                                             </td>
                                            
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Engine Bore</td>
+                                            <td>Norme euro</td>
                                             <td >
                                                 <p>
-                                                    82 mm
+                                                    E6d Final
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    82 mm
+                                                    E6d Final
                                                 </p>
                                             </td>
                                           
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Engine Stroke</td>
+                                            <td>Puissance ICE (CH)</td>
                                             <td >
                                                 <p>
-                                                    93.2 mm
+                                                    130 / 3750
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    93.2 mm
-                                                </p>
-                                            </td>
-                                           
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Max Engine Power (kW)</td>
-                                            <td >
-                                                <p>
-                                                    165 kW
-                                                </p>
-                                            </td>
-                                            <td >
-                                                <p>
-                                                    165 kW
+                                                    130 / 3750
                                                 </p>
                                             </td>
                                            
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Horsepower</td>
+                                            <td>Puissance ICE (Kw) 96 / 3750
+                                            </td>
                                             <td >
                                                 <p>
-                                                    225 hp
+                                                    96 / 3750
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    225 hp
-                                                </p>
-                                            </td>
-                                           
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Rev at max engine power</td>
-                                            <td >
-                                                <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-                                            <td >
-                                                <p>
-                                                    4250 rpm
+                                                    96 / 3750
                                                 </p>
                                             </td>
                                            
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Torque</td>
+                                            <td>Couple (Nm)
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    320 / 1500 
+                                                </p>
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    320 / 1500 
+                                                </p>
+                                            </td>
+                                           
+                                        </tr>
+
+                                        <tr class="multi-child">
+                                            <td>Boîte de vitesse 
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    manuelle, 6 vitesses
+                                                </p>
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    manuelle, 6 vitesses
+                                                </p>
+                                            </td>
+                                           
+                                        </tr>
+
+                                        <tr class="multi-child">
+                                            <td>Couple (Nm) 
+                                            </td>
                                             <td>
                                                 <p>
-                                                    470 Nm
+                                                    320 / 1500
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    470 Nm
+                                                    320 / 1500
                                                 </p>
                                             </td>
                                            
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Rev at max engine torque</td>
+                                            <td>0-100 km/h 
+                                            </td>
                                             <td >
                                                 <p>
-                                                    1750 - 2500 rpm
+                                                    (sec) 10,6
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    1750 - 2500 rpm
+                                                    (sec) 10,6
                                                 </p>
                                             </td>
                                      
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Fuel type</td>
+                                            <td>Vitesse max. 
+                                            </td>
                                             <td >
                                                 <p>
-                                                    Petrol
+                                                    (km/h) 194
                                                 </p>
                                             </td>
                                             <td >
                                                 <p>
-                                                    Diesel
+                                                    (km/h) 194
+                                                </p>
+                                            </td>
+                                          
+                                        </tr>
+                                        <tr class="multi-child">
+                                            <td>Combinée l/100 km WLTP 
+
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    5.2 - 5.3
+                                                </p>
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    5.2 - 5.3
+                                                </p>
+                                            </td>
+                                          
+                                        </tr>
+                                        <tr class="multi-child">
+                                            <td>CO2 (g/km) combiné WLTP 
+
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    135 - 139
+                                                </p>
+                                            </td>
+                                            <td >
+                                                <p>
+                                                    135 - 139
                                                 </p>
                                             </td>
                                           
@@ -800,7 +868,8 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading" id="Dimensions" role="tab">
-                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Dimensions-view" role="button">Dimensions</a></h4>
+                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Dimensions-view" role="button">SÉCURITÉ
+                                </a></h4>
                             </div>
                             <div aria-labelledby="Dimensions" class="panel-collapse collapse" id="Dimensions-view" role="tabpanel" aria-expanded="false" style="height: 0px;">
                                 <table class="specs-table">
@@ -812,194 +881,102 @@
                                     <tbody>
                                         
                                         <tr class="multi-child">
-                                            <td>Engine Description</td>
+                                            <td>AFFICHAGE DE SURVEILLANCE DE LA PRESSION DES PNEUS (TPMS</td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
+                                                    AIDE AU DÉMARRAGE EN COTE
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Drivetrain</td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
+                                                    AIDE AU DÉMARRAGE EN COTE
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Number of Cylinders</td>
+                                            <td>AIRBAGS-RIDEAU, SIÈGE AVANT ET ARRIÈRE LATÉRAUX</td>
                                             <td>
                                                 <p>
-                                                    4
+                                                    ALERTE DE COLLISION AVANT
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    4
-                                                </p>
-                                            </td>
+                                                    ASSISTANCE DE VITESSE INTELLIGENTE (ISA)
 
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Displacement</td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Engine Bore</td>
+                                            <td>CONTRÔLE DE STABILITÉ ÉLECTRONIQUE</td>
                                             <td>
                                                 <p>
-                                                    82 mm
+                                                    CONTRÔLE DE TRACTION TOUTES VITESSES
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    82 mm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Stroke</td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
+                                                    DÉTECTION DE FATIGUE
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Max Engine Power (kW)</td>
+                                            <td>DISPOSITIF DE LIMITATION DE VITESSE ACTIF</td>
                                             <td>
                                                 <p>
-                                                    165 kW
+                                                    FREINAGE D’URGENCE
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    165 kW
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Horsepower</td>
-                                            <td>
-                                                <p>
-                                                    225 hp
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    225 hp
+                                                    FREIN DE STATIONNEMENT ÉLECTRONIQUE
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Rev at max engine power</td>
+                                            <td>LIMITEUR DE VITESSE</td>
                                             <td>
                                                 <p>
-                                                    4250 rpm
+                                                    RECONNAISSANCE DES PANNEAUX DE CIRCULATION (TSR)
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Torque</td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
+                                                    RÉGULATEUR DE VITESSE
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Rev at max engine torque</td>
+                                            <td>SYSTÈME D’AIDE AU STATIONNEMENT ARRIÈRE PARKSENSE</td>
                                             <td>
                                                 <p>
-                                                    1750 - 2500 rpm
+                                                    SUPPORT DE FREIN PLUIE
                                                 </p>
                                             </td>
                                             <td>
-                                                <p>
-                                                    1750 - 2500 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Fuel type</td>
-                                            <td>
-                                                <p>
-                                                    Petrol
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    Diesel
+                                                <p class="text-center">
+--
                                                 </p>
                                             </td>
 
                                         </tr>
-
-
-
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading" id="Weight" role="tab">
-                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Weight-view" role="button">Weight</a></h4>
+                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Weight-view" role="button">INTÉRIEUR</a></h4>
                             </div>
                             <div aria-labelledby="Weight" class="panel-collapse collapse" id="Weight-view" role="tabpanel" aria-expanded="false" style="height: 0px;">
                                 <table class="specs-table">
@@ -1011,194 +988,71 @@
                                     <tbody>
 
                                         <tr class="multi-child">
-                                            <td>Engine Description</td>
+                                            <td>ACCOUDOIR AR AVEC SIÈGE PORTE-MONTRE</td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
+                                                    CEINTURE DE SÉCURITÉ CENTRALE ARRIÈRE À 3 POINTS
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Drivetrain</td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
+                                                    CLIMATISATION AUTOMATIQUE BI ZONES
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Number of Cylinders</td>
+                                            <td>KIT FUMEUR</td>
                                             <td>
                                                 <p>
-                                                    4
+                                                    PARE-SOLEIL AVEC MIROIRS
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    4
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Displacement</td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
+                                                    SIÈGE ARRIÈRE RABATTABLE 60/40
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Engine Bore</td>
+                                            <td>SIÈGE CONDUCTEUR - RÉGLAGE MANUEL À 6 DIRECTIONS</td>
                                             <td>
                                                 <p>
-                                                    82 mm
+                                                    SIÈGES EN TISSU
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    82 mm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Stroke</td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
+                                                    SIÈGE FRT PASS - RÉGLAGE MANUEL À 6 DIRECTIONS
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Max Engine Power (kW)</td>
+                                            <td>SIÈGE PASSAGER AVANT RABATTABLE</td>
                                             <td>
                                                 <p>
-                                                    165 kW
+                                                    TAPIS DE SOL AVANT ET ARRIÈRE
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    165 kW
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Horsepower</td>
-                                            <td>
-                                                <p>
-                                                    225 hp
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    225 hp
+                                                    VOLANT EN CUIR
                                                 </p>
                                             </td>
 
                                         </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Rev at max engine power</td>
-                                            <td>
-                                                <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Torque</td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Rev at max engine torque</td>
-                                            <td>
-                                                <p>
-                                                    1750 - 2500 rpm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    1750 - 2500 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Fuel type</td>
-                                            <td>
-                                                <p>
-                                                    Petrol
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    Diesel
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-
-
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading" id="Performance" role="tab">
-                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Performance-view" role="button">Performance</a></h4>
+                                <h4 class="panel-title"><a aria-controls="collapseOne_reg" aria-expanded="false" class="collapsed" data-parent="#accordion_reg" data-toggle="collapse" href="#Performance-view" role="button">EXTERIEUR</a></h4>
                             </div>
                             <div aria-labelledby="Performance" class="panel-collapse collapse" id="Performance-view" role="tabpanel" aria-expanded="false" style="height: 0px;">
                                 <table class="specs-table">
@@ -1210,187 +1064,34 @@
                                     <tbody>
 
                                         <tr class="multi-child">
-                                            <td>Engine Description</td>
+                                            <td>FEUX ANTIBROUILLARD ARRIÈRE</td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
+                                                    FEUX ARRIÈRE LED
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    Four-cylinder twin turbo-charged diesel engine
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Drivetrain</td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    All wheel drive
+                                                    JANTE ALLIAGE 17’‘
                                                 </p>
                                             </td>
 
                                         </tr>
 
                                         <tr class="multi-child">
-                                            <td>Number of Cylinders</td>
+                                            <td>POIGNÉES DE PORTE COULEUR CARROSSERIE</td>
                                             <td>
                                                 <p>
-                                                    4
+                                                    RÉTROVISEURS À RÉGLAGE ÉLECTRIQUE
                                                 </p>
                                             </td>
                                             <td>
                                                 <p>
-                                                    4
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Displacement</td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    1969 cc
+                                                    RÉTROVISEURS EXTÉRIEURS NOIR BRILLANT
                                                 </p>
                                             </td>
 
                                         </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Bore</td>
-                                            <td>
-                                                <p>
-                                                    82 mm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    82 mm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Engine Stroke</td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    93.2 mm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Max Engine Power (kW)</td>
-                                            <td>
-                                                <p>
-                                                    165 kW
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    165 kW
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Horsepower</td>
-                                            <td>
-                                                <p>
-                                                    225 hp
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    225 hp
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Rev at max engine power</td>
-                                            <td>
-                                                <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    4250 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Torque</td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    470 Nm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Rev at max engine torque</td>
-                                            <td>
-                                                <p>
-                                                    1750 - 2500 rpm
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    1750 - 2500 rpm
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-                                        <tr class="multi-child">
-                                            <td>Fuel type</td>
-                                            <td>
-                                                <p>
-                                                    Petrol
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>
-                                                    Diesel
-                                                </p>
-                                            </td>
-
-                                        </tr>
-
-
-
                                     </tbody>
                                 </table>
                             </div>
@@ -1405,9 +1106,9 @@
         <!-- cta bar -->
         <div class="cta-bar">
             <ul>
-                <li><a href="#"><i class="fa fa-map-pin"></i> Find Dealer</a></li>
-                <li><a href="#"><i class="fa fa-automobile"></i> Test Drive</a></li>
-                <li><a href="#"><i class="fa fa-mobile-phone"></i> Let Us Call You</a></li>
+                <li><a href="index-map.html"><i class="fa fa-map-pin"></i> Find Dealer</a></li>
+                <li><a href="appointment.html"><i class="fa fa-automobile"></i> Test Drive</a></li>
+                <li><a href="pages-contact.html"><i class="fa fa-mobile-phone"></i> Let Us Call You</a></li>
                 <li><a href="#" class="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i> Back to top</a></li>
             </ul>
         </div>
@@ -1423,11 +1124,11 @@
                                 <h3 class="widget-title">All Models</h3>
                                 <div class="quick-links">                              
                                         <ul>
-                                            <li><a href="#">Jeep Model 1</a></li>
-                                            <li><a href="#">Jeep Model 2</a></li>
-                                            <li><a href="#">Jeep Model 3</a></li>
-                                            <li><a href="#">Jeep Model 4</a></li>
-                                            <li><a href="#">Jeep Model 5</a></li>
+                                            <li><a href="#">Autoshow Model 1</a></li>
+                                            <li><a href="#">Autoshow Model 2</a></li>
+                                            <li><a href="#">Autoshow Model 3</a></li>
+                                            <li><a href="#">Autoshow Model 4</a></li>
+                                            <li><a href="#">Autoshow Model 5</a></li>
                                         </ul>                              
                                 </div>
                             </div>
@@ -1457,30 +1158,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-2 col-md-3">
-                            <div class="widget">
-                                <h3 class="widget-title">Account</h3>
-                                <div class="quick-links">
-                                    <ul>
-                                        <li><a href="#">Log In</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col-xl-4 col-lg-4 col-md-12">
                             <div class="dealerfinder">
-                                <h2 class="section-title">Find Dealer</h2>
-                                <p>Find your nearest authorized dealer for sales, expert advice and support.</p>
-                                <form action="http://quartzthemes.com/autoshow-preview/autoshow/dealers.html" method="get">
+                                <h3 class="section-title">Find Dealer</h3>
+                                
+                                <form action="#" method="get">
                                     <div class="input-group">
                                         <input type="text" placeholder="Enter your city">
                                         <span class="input-group-btn">
-                                            <button class="button" onclick="window.location.href='dealers.html'"><i class="fa fa-angle-right"></i></button>
+                                            <button class="button" onclick="window.location.href='index-map.html'"><i class="fa fa-angle-right"></i></button>
                                         </span>
                                     </div>
                                 </form>
-                                <div class="checkbox">
+                                <!-- <div class="checkbox">
                                     <input type="checkbox" id="SelectAll">
                                     <label for="SelectAll"><span class="checkbox-icon"></span> Select All</label>
                                 </div>
@@ -1491,7 +1182,7 @@
                                 <div class="checkbox">
                                     <input type="checkbox" id="PartsShop">
                                     <label for="PartsShop"><span class="checkbox-icon"></span> Parts Shop</label>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div> 
@@ -1508,10 +1199,10 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

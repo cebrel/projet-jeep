@@ -603,7 +603,7 @@
 //panorama 360
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "/projet-jeep/assets/img/newimage360.jpg",
+    "panorama": "./assets/img/newimage360.jpg",
     "autoLoad":true,
     
 });
@@ -613,36 +613,37 @@ pannellum.viewer('panorama', {
 function change1()
 	{
 
-document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep2.jpg';
+document.getElementById('pic').src='./assets/images-color/jeep2.jpg';
 
 	}
 
 	function change2()
 	{
 
-document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep3.jpg';
+document.getElementById('pic').src='./assets/images-color/jeep3.jpg';
 
 	}
 
 	function change3()
 	{
 
-document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep4.jpg';
+document.getElementById('pic').src='./assets/images-color/jeep4.jpg';
 
 	}
 
 	function change4()
 	{
 
-document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep5.jpg';
+document.getElementById('pic').src='./assets/images-color/jeep5.jpg';
 
 	}
 	function change5()
 	{
 
-document.getElementById('pic').src='/projet-jeep/assets/images-color/jeep6.jpg';
+document.getElementById('pic').src='./assets/images-color/jeep6.jpg';
 
 	}
 	
-	
-	
+    // showrooms
+    
+    
