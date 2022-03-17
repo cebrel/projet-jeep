@@ -573,6 +573,7 @@
             });
 
         },
+        
 
         // Car Interest
         carInterest: function() {
@@ -642,8 +643,10 @@ document.getElementById('pic').src='./assets/images-color/jeep5.jpg';
 
 document.getElementById('pic').src='./assets/images-color/jeep6.jpg';
 
-	}
+	};
+  
+
+    
 	
-    // showrooms
     
     

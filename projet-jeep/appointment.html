@@ -26,7 +26,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+   
+(function() {
+emailjs.init("user_GfHocrlbjINZFbJfIg7J2");
+})();
+    </script>
 </head>
 <body>
 <div class="animsition">
@@ -255,28 +261,31 @@
                                 <p><strong>
                                     Remplissez le formulaire pour demander un rendez-vous à l'essai routier.</strong></p>
 
-                                <form accept-charset="UTF-8" action="#" class="require-validation" method="post">
+                                <!-- <form accept-charset="UTF-8" action="#" class="require-validation" method="post"> -->
 
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <label class="control-label">Contact Name</label>
-                                            <input placeholder="Your Name" class="formulaire" size="4" type="text">
+                                            <input placeholder="Your Name" id="toName" class="formulaire contact-name" size="4" type="text" onblur='validateName()'>
+                                            <span id="name-error" class="error" ></span>
                                         </div>
 
                                         <div class="form-group col-sm-6">
                                             <label class="control-label">E-mail</label>
-                                            <input placeholder="Your Email" class="formulaire" autocomplete="off" type="text">
+                                            <input placeholder="Your Email" class="formulaire contact-email" id="fromName" autocomplete="off" type="text" onblur='validateEmail()'>
+                                            <span id="email-error" class="error" ></span>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <label class="control-label">Phone Number</label>
-                                            <input class="formulaire" autocomplete="off" size="20" placeholder="+212" type="text">
+                                            <input class="formulaire contact-phone" autocomplete="off" id="phone" size="20" placeholder="+212" type="text" onblur='validatePhone()'>
+                                            <span id="phone-error" class="error" ></span>
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label>Select Model</label>
-                                            <select class="formulaire" name="arac" class="selectpicker">
+                                            <select id="model" class="formulaire" name="arac" class="selectpicker">
                                                 <option value="1">Model 1</option>
                                                 <option value="2">Model 2</option>
                                                 <option selected="selected" value="3">Model 3</option>
@@ -288,7 +297,8 @@
 
                                     <div class="row">
                                         <div class="form-group col-sm-12">
-                                            <textarea class="formulaire" name="mesajınız" rows="6" class="margin-top-10" placeholder="Additional Details"></textarea>
+                                            <textarea class="formulaire contact-message" name="mesajınız" id="msg" rows="6" class="margin-top-10" placeholder="Additional Details" onblur='validateMessage()'></textarea>
+                                            <span id="message-error" class="error" ></span>
                                         </div>
                                     </div>
 
@@ -297,12 +307,12 @@
                                             <label>*How would you prefer we contact you?</label>
                                             <br>
                                             <div class="radio">
-                                                <input id="radio-1" name="radio" type="radio" checked="">
+                                                <input  name="radio" type="radio" id="mobile" checked="">
                                                 <label for="radio-1"><span class="radio-label"></span> Phone </label>
                                             </div>
      
                                             <div class="radio margin-left-20">
-                                                <input id="radio-2" name="radio" type="radio">
+                                                <input  id="email" name="radio" type="radio">
                                                 <label for="radio-2"><span class="radio-label"></span> Email </label>
                                             </div>
                                         </div>
@@ -310,7 +320,7 @@
                                     
                                     <div class="row margin-top-30">
                                         <div class="col-sm-12">
-                                            <button class="button">Submit</button>
+                                            <button  onclick='validateForm()'class="button">Submit</button>
                                         </div>
                                     </div>
 
@@ -323,7 +333,7 @@
                                         </div>
                                     </div>
 
-                                </form>
+                                <!-- </form> -->
                             </div>
                         </div>
                     </div>
@@ -452,6 +462,8 @@
     </div>
 </div>
 <!-- Javascript -->
+<script src="assets/js/validatejs2.js"></script>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bootstrap-select.min.js"></script>

@@ -26,6 +26,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     <script>
         (function(d, w, c) {
             w.ChatraID = 'DK9HCWocGR9KaKcuh';
@@ -38,6 +39,16 @@
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
     </script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+   
+(function() {
+emailjs.init("user_GfHocrlbjINZFbJfIg7J2");
+})();
+    </script>
+
+   
 </head>
 <body>
 <div class="animsition">
@@ -307,34 +318,44 @@
                         <div class="content-area">
                             <h2>Any questions? Feel free to contact us!</h2>
                             <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit Perfer repudiandae nostrum alias quibusdam!</p>
-                            <form method="post" name="contactform" id="contactform" autocomplete="on">
-                                
+                            <!-- <form   id="contactform" method="post" 
+                            onsubmit="this.submit()"; this.reset(); return false; > -->
+                            
                                 <div class="row">
+                                    
                                     <div class="col-md-6">
-                                        <input class="with-border" name="name" type="text" id="name" placeholder="Your Name" required="required" />
+                                        
+                                        <input class="with-border contact-name" id="toName" name="name" type="text"   placeholder="Your Name"  onkeyup='validateName()'/>
+                                        <span id="name-error" class="error" ></span>
                                     </div>
 
                                     <div class="col-md-6">
-                                        <input class="with-border" name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+                                        <input class="with-border contact-email" id="fromName" name="email" type="email"   placeholder="Email Address" onkeyup='validateEmail()'/>
+                                        <span id="email-error" class="error" ></span>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input class="with-border" name="subject" type="text" id="subject" placeholder="Subject" required="required" />
+                                        <input class="with-border contact-phone" id="phone" name="subject" type="tel"   placeholder="Phone number" onkeyup='validatePhone()' />
+                                        <span id="phone-error" class="error" ></span>
                                     </div>
-                                </div>        
+                                    
+                                </div> 
+                                        
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
+                                        <textarea class="with-border contact-message" id="msg" name="comments" cols="40" rows="5"  placeholder="Message" spellcheck="true" onkeyup='validateMessage()' ></textarea>
+                                        <span id="message-error" class="error"></span>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" class="submit button margin-top-15" id="submit" value="Submit Message" />
+                                        <input onclick='validateForm()' type="submit" class="submit button margin-top-15 send"  value="Submit Message" />
+                                        
                                     </div>
                                 </div>                            
 
-                            </form>
+                            <!-- </form> -->
                         </div>
                     </div>
                 </div>
@@ -456,6 +477,8 @@
     </div>
 </div>
 <!-- Javascript -->
+
+<script src="assets/js/validate.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/bootstrap-select.min.js"></script>
@@ -470,6 +493,8 @@
 <script src="assets/js/magnific.popup.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>

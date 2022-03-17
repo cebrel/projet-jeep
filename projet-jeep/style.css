@@ -2730,7 +2730,7 @@ support for no js
 --------------------------------------------- */
 .owl-theme .owl-nav { display: block; }
 .owl-theme .owl-nav [class*="owl-"] { position: absolute; text-align: center; background-color: #333;  color: #fff; width: 40px; height: 40px; font-size: 0; display: inline-block; border-radius: 4px; -webkit-transition: all ease .3s; -moz-transition: all ease .3s; transition: all ease .3s; }
-.owl-theme .owl-nav [class*="owl-"]:after { content: "\f104"; font-size: 18px; line-height: 40px; font-family: "FontAwesome"; position: absolute; left: 0; top: 0; text-indent: 0; width: 100%; height: 100%; }
+.owl-theme .owl-nav [class*="owl-"]:after { background-color: #041244; content: "\f104"; font-size: 18px; line-height: 40px; font-family: "FontAwesome"; position: absolute; left: 0; top: 0; text-indent: 0; width: 100%; height: 100%; }
 .owl-theme .owl-nav .owl-next:after { content: "\f105"; }
 .owl-theme .owl-nav [class*="owl-"].disabled { background-color: rgba(190, 196, 205, 0.55); color: #fff; cursor: default; }
 .owl-theme .owl-nav [class*='owl-'] { top: 50%; margin-top: -20px; }
@@ -3310,7 +3310,7 @@ support for no js
     display: inline-block;
     width: 9px;
     height: 34px;
-    background-color: #226d95;
+    background-color: #B12214;
 }
 
 .page-title-wrapper .page-title-inner .page-title-content p {
@@ -5707,7 +5707,7 @@ support for no js
   }
   .primary-nav .nav-gallery .nav-item p {
   	display: block;
-  	color: #226d95;
+  	color: #06163a;;
     font-weight: 600;
     font-size: 16px;
     padding: 0 15px;
@@ -5756,8 +5756,9 @@ support for no js
     font-weight: 600;
   }
   .primary-nav .nav-gallery .nav-item .price small {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
+    margin-top: 5px;
   }
   .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
     background: #c9cbc4;
@@ -6484,7 +6485,7 @@ ul {
 
 }
 .showroom-info{
-  padding-left: 15px;
+  padding-left: 110px;
   font-size: 35px;
   font-weight: normal;
   font-family: cvyp;
@@ -6494,4 +6495,17 @@ ul {
   color: rgba(177, 34, 20, 1);
   text-align: center;
   
+}
+@media  (max-width: 767px){
+.showroom-info {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+.error{
+  position: absolute;
+  bottom: 23px;
+  right: 17px;
+  font-size: 14px;
+color: #B12214;
 }
