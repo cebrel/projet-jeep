@@ -33,7 +33,7 @@ em,
 i,
 blockquote { font-style: italic; }
 blockquote { position: relative; background-color: #f7f9fb; margin: 40px 0 30px; padding: 30px; }
-blockquote:before { content: ""; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background-color: #226d95; }
+blockquote:before { content: ""; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background-color: #B12214; }
 blockquote > p:last-child { margin-bottom: 0; }
 blockquote cite { position: absolute; right: 0; bottom: 0; }
 blockquote em,
@@ -2521,7 +2521,7 @@ support for no js
 .page-banner-content span {
     font-size: 20px;
     line-height: 1.7;
-    color: #aeb2ba;
+    color: #B12214;
     margin-bottom: 3px;
     margin-top: 3px;
     display: block;
@@ -2569,7 +2569,7 @@ support for no js
    font-weight: 500; 
 }
 .page-banner-content .page-breadcrumb li a:hover {
-   color: #226d95; 
+   color: #B12214; 
 }
 
 /* Slider
@@ -4218,13 +4218,14 @@ support for no js
   line-height: 40px;
 }
 .content-area span {
-  color: #226d95;
+  color: #B12214;
 }
 .content-area .subtitle {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
   margin: 0 0 30px;
+  color: #041244;
 }
 
 /* Contact Area
@@ -6086,7 +6087,7 @@ support for no js
 	.slider-content .price-area .per-time {
 	  font-size: 12px;
 	  line-height: 14px;
-	}
+	} 
 	.slider-content .price-area h3 span {
 	  font-size: 16px;
 	  vertical-align: 9px;
