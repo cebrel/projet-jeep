@@ -32,7 +32,7 @@ function validatePhone(){
 
     } 
     if (phone.length !== 10){
-        phoneError.innerHTML='phone nb should be 10 digits';
+        phoneError.innerHTML=' should be 10 digits';
         return false;
 
     
@@ -66,13 +66,14 @@ function sendMail() {
     phone: document.getElementById("phone").value,
     model: document.getElementById("model").value,
 	message:document.getElementById("msg").value,	
-    contact1: document.getElementById("mobile").checked,
-    contact2: document.getElementById("email").checked,
+     contact1 : document.querySelector('input[name=radio-1]:checked').value,
+    contact2: document.getElementById("radio-2").value,
 
 	};
 	emailjs.send('service_d40og8j','template_h48ybgh',tempParams)
 	.then(function(res){
 		console.log("succes",res.status);
+        location.reload();
 
 	})
 }
@@ -96,7 +97,7 @@ function validateForm(){
     }
     else{
         sendMail();
-        // location.reload();
+
         
 
 

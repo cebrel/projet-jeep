@@ -604,12 +604,48 @@
 //panorama 360
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "./assets/img/newimage360.jpg",
+    "panorama": "./assets/img/panoramacivic.jpg",
     "autoLoad":true,
     
+    "hotSpots": [
+        
+        {
+    
+
+            "pitch": -15.4,
+            "yaw": -25.5,
+            "type": "info",
+            "text": "Baltimore Museum of Art",
+            
+        },
+        
+        {
+            "pitch": -9.4,
+            "yaw": 222.6,
+            "type": "info",
+            "text": "Art Museum Drive"
+        },
+        {
+            "pitch": -0.9,
+            "yaw": 144.4,
+            "type": "info",
+            "text": "North Charles Street"
+        }
+    ]
 });
 
+var productViewer = new ProductViewer ({
+    element: document.getElementById('image360'),
+    imagePath: './images',
+    filePrefix: 'img',
+    fileExtension: '.jpg'
+  });
 
+ 
+
+  ProductViewer.once('loaded', function (){
+    ProductViewer.animate360();
+  })
 // change-color
 function change1()
 	{
