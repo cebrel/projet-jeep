@@ -72,7 +72,7 @@ function sendMail() {
 	emailjs.send('service_az0q6pe','template_djjbxur',tempParams)
 	.then(function(res){
 		console.log("succes",res.status);
-
+        location.reload();
 	})
 }
 
@@ -96,7 +96,7 @@ function validateForm(){
     else{
 
 sendMail();
-// location.reload();
+alert("Formulaire envoyé");
         
 
 

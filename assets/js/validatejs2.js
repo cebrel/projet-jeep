@@ -66,8 +66,7 @@ function sendMail() {
     phone: document.getElementById("phone").value,
     model: document.getElementById("model").value,
 	message:document.getElementById("msg").value,	
-     contact1 : document.querySelector('input[name=radio-1]:checked').value,
-    contact2: document.getElementById("radio-2").value,
+     
 
 	};
 	emailjs.send('service_d40og8j','template_h48ybgh',tempParams)
@@ -97,7 +96,7 @@ function validateForm(){
     }
     else{
         sendMail();
-
+alert("formulaire envoyé");
         
 
 
