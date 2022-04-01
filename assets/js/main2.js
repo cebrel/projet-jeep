@@ -16,17 +16,17 @@ var panorama, panorama2,panorama3, viewer, container, infospot1,infospot2,infosp
     }
   }
 
-  panorama = new PANOLENS.ImagePanorama('/assets/img/showroom20.jpg');
+  panorama = new PANOLENS.ImagePanorama('assets/img/showroom20.jpg');
   panorama.addEventListener('progress', onProgress);
   panorama.addEventListener('enter', onEnter);
 
   
   
-  panorama2 = new PANOLENS.ImagePanorama('/assets/img/newimage360.jpg');
+  panorama2 = new PANOLENS.ImagePanorama('assets/img/newimage360.jpg');
   panorama2.addEventListener('progress', onProgress);
   panorama2.addEventListener('enter', onEnter);
 
-  panorama3 = new PANOLENS.ImagePanorama('/assets/img/image360.jpeg');
+  panorama3 = new PANOLENS.ImagePanorama('assets/img/image360.jpeg');
   panorama3.addEventListener('progress', onProgress);
   panorama3.addEventListener('enter', onEnter);
 
@@ -56,7 +56,7 @@ var panorama, panorama2,panorama3, viewer, container, infospot1,infospot2,infosp
   
   panorama3.add(infospot3);
 
-  infospot4 = new PANOLENS.Infospot(100,'/assets/img/rond.png');
+  infospot4 = new PANOLENS.Infospot(100,'assets/img/rond.png');
   infospot4.position.set(200.00, -650, -1400);
   infospot4.addHoverElement(document.querySelector('.pneu'), 150);
   panorama.add(infospot4);
