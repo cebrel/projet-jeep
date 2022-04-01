@@ -1402,7 +1402,55 @@ table.table col:nth-child(odd) { background-color: #f8f8f8; }
   margin: 0;
   overflow: hidden;
 }
+/* panolens */
+#container {
+  width: 100%;
+  height: 700px;
+}
 
+#desc-container {
+  max-width: 250px;
+  max-height: 200px;
+  min-width: 250px;
+  min-height: 150px;
+  background: rgba(0,0,0, .3);
+  color:white ;
+  border-radius: 3px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  
+}
+
+.text {
+  text-align: center;
+
+}
+
+#progress {
+  width: 0;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.infospoto{
+  padding: 5px;
+  height: 75%;
+}
+
+#progress.finish {
+  opacity: 0;
+}
+/* panolens end */
 .tabs ul {
   padding: 0;
   list-style: none;
@@ -1693,6 +1741,9 @@ body .alert strong { border: none; }
 .site-wrapper.header-top-with {
   padding-top: 130px;	
 }
+.site-wrappers.header-top-with{
+padding-top: 84px;
+}
 .site-wrapper.transparent-header {
   padding-top: 0;
 }
@@ -1777,10 +1828,10 @@ body .alert strong { border: none; }
 .section-title-wrapper {
   margin: 0 0 30px 0; 
 }
-.pano{
+/* .pano{
   margin: 0 0 0 0;
    
-}
+} */
 .margin-view{
   margin-bottom: 20px;
 }
@@ -4559,7 +4610,7 @@ support for no js
   cursor: default;
   background-color: #041244;
   color: #fff;
-  box-shadow: 0 2px 10px rgba(102,103,107,0.25);
+  /* box-shadow: 0 2px 10px rgba(102,103,107,0.25); */
 }
 
 .section-gallery .tab-content > .tab-pane {
@@ -6261,12 +6312,12 @@ support for no js
 }
 
 #panorama{
-  height: 500px;
-  width: 100vw;
-  margin-bottom: 0;
+  height: 900px;
+  width: 400pw;
+  /* margin-bottom: 0;
   margin-top: 0;
   margin-bottom: 5px;
-  
+   */
 
 }
 .col-o{
@@ -6385,6 +6436,18 @@ support for no js
     position: relative;
     width: 200px;
     right: 16px;
+    
+  }
+  @media only screen and (max-width: 767px) {
+    .logo-contin {
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+      bottom: 15px;
+      left:12px
+    }
+  
   }
   
 /* slick */
@@ -6452,7 +6515,7 @@ ul {
   z-index: 2;
   text-align: center;
   width: 100%;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 .ctrl {
   padding: 8px 5px;

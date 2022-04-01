@@ -603,27 +603,7 @@
 })(jQuery);
 //panorama 360
 
-document.getElementById('pan-up').addEventListener('click', function(e) {
-    viewer.setPitch(viewer.getPitch() + 10);
-});
-document.getElementById('pan-down').addEventListener('click', function(e) {
-    viewer.setPitch(viewer.getPitch() - 10);
-});
-document.getElementById('pan-left').addEventListener('click', function(e) {
-    viewer.setYaw(viewer.getYaw() - 10);
-});
-document.getElementById('pan-right').addEventListener('click', function(e) {
-    viewer.setYaw(viewer.getYaw() + 10);
-});
-document.getElementById('zoom-in').addEventListener('click', function(e) {
-    viewer.setHfov(viewer.getHfov() - 10);
-});
-document.getElementById('zoom-out').addEventListener('click', function(e) {
-    viewer.setHfov(viewer.getHfov() + 10);
-});
-document.getElementById('fullscreen').addEventListener('click', function(e) {
-    viewer.toggleFullscreen();
-});
+
 viewer=pannellum.viewer('panorama', {
     "type": "equirectangular",
     "panorama": "./assets/img/panoramacivic.jpg",
@@ -658,7 +638,27 @@ viewer=pannellum.viewer('panorama', {
         }
     ]
 });
-
+document.getElementById('pan-up').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() + 10);
+});
+document.getElementById('pan-down').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() - 10);
+});
+document.getElementById('pan-left').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() - 10);
+});
+document.getElementById('pan-right').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() + 10);
+});
+document.getElementById('zoom-in').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() - 10);
+});
+document.getElementById('zoom-out').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() + 10);
+});
+document.getElementById('fullscreen').addEventListener('click', function(e) {
+    viewer.toggleFullscreen();
+});
 var productViewer = new ProductViewer ({
     element: document.getElementById('image360'),
     imagePath: './images',
@@ -706,7 +706,6 @@ document.getElementById('pic').src='./assets/images-color/jeep6.jpg';
 
 	};
   
-
     
 	
     

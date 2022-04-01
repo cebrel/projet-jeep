@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <title>projet de concessionaire de voiture</title>
-    <meta name="description" content="site de concessionaire de voiture Jeep">
+    <meta name="description" content="site de concessionaire de voiture Lacontinental">
     <meta name="keywords" content="car showroom, auto dealer, automotive.">
     <meta name="author" content="KouidryM">
     
@@ -36,6 +36,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/b2b6aabbcd.js" crossorigin="anonymous"></script>
     <script>
         (function(d, w, c) {
             w.ChatraID = 'DK9HCWocGR9KaKcuh';
@@ -52,7 +53,7 @@
 </head>
 <body class="white-section">
 <div class="animsition">
-    <div class="site-wrapper header-top-with">
+    <div class="site-wrappers header-top-with">
         <!-- header-area -->
         <header id="header" class="main-header fullwidth">
             <div class="container">
@@ -166,11 +167,42 @@
         <!-- slider-area -->
         <section class="white-section section-block">
 
-            <!-- <h1 style="padding:0px 20px;text-align: center;;"><b> Nos Showrooms</b></h1> -->
+            <h1 style="padding:0px 20px;text-align: center;;"><b> Touchez pour visiter<i class="fa-thin fa fa-hand-pointer margin-left-10"></i></b></h1>
     
         
-        
+            <div id="container"></div>
+            <div id="progress"></div>
             
+            <div id="desc-container" style="display:none">
+              <img class="infospoto" src="assets/img/car2.webp"></img>
+              <div class="title">Grand Cheroke</div>
+              <div class="text">Lorem ipsum dolor sit amet. </div>
+            </div>
+            <div id="desc-container" class="turbo" style="display:none">
+                <img class="infospoto" src="assets/img/bord.jpg"></img>
+                <div class="title">tableau de bord</div>
+                <div class="text">Lorem ipsum dolor sit amet. </div>
+              </div>
+              <div id="desc-container" class="volant" style="display:none">
+                <img class="infospoto" src="assets/img/volant.png"></img>
+                <div class="title">Volant cuire</div>
+                <div class="text">Lorem ipsum dolor sit amet. </div>
+              </div>
+              <div id="desc-container" class="pneu" style="display:none">
+                <img class="infospoto" src="assets/img/pneu-cheroke.png"></img>
+                <div class="title">Pneu Continental</div>
+                <div class="text">Lorem ipsum dolor sit amet. </div>
+              </div>
+              <div id="desc-container" class="feu" style="display:none">
+                <img class="infospoto" src="assets/img/feu-ar.png"></img>
+                <div class="title">Feu Arriére</div>
+                <div class="text">Lorem ipsum dolor sit amet. </div>
+              </div>
+              <div id="desc-container" class="retro" style="display:none">
+                <img class="infospoto" src="assets/img/retro.png"></img>
+                <div class="title">Rétroviseur</div>
+                <div class="text">Lorem ipsum dolor sit amet. </div>
+              </div>
             <h2 style="padding:0px 20px;text-align: center;;"><b> Showroom maarif</b></h2>
             <div class="ag-format-container ">
                 <div class="layout ">
@@ -304,7 +336,7 @@
         <!-- brands-area -->
         <div class="white-section section-block">
 
-            <div class="section-space"></div>
+            <!-- <div class="section-space"></div> -->
             <div class="container">
                 <div class="row ">
                     
@@ -319,7 +351,7 @@
 
                                 <div class="partner-item clearfix">
                                     <div class="inner">
-                                        <a target="_blank" href="#">
+                                        <a  href="#">
                                             <div class="thumb">
                                                 <img src="assets/img/partner/autremarque1.jpg" alt="Image">
                                             </div>
@@ -329,7 +361,7 @@
 
                                 <div class="partner-item clearfix">
                                     <div class="inner">
-                                        <a target="_blank" href="#">
+                                        <a  href="#">
                                             <div class="thumb">
                                                 <img src="assets/img/partner/autremarque2.jpg" alt="Image">
                                             </div>
@@ -339,7 +371,7 @@
 
                                 <div class="partner-item clearfix">
                                     <div class="inner">
-                                        <a target="_blank" href="#">
+                                        <a  href="#">
                                             <div class="thumb">
                                                 <img src="assets/img/partner/autremarque3.jpg" alt="Image">
                                             </div>
@@ -349,7 +381,7 @@
 
                                 <div class="partner-item clearfix">
                                     <div class="inner">
-                                        <a target="_blank" href="#">
+                                        <a  href="#">
                                             <div class="thumb">
                                                 <img src="assets/img/partner/autremarque4.jpg" alt="Image">
                                             </div>
@@ -470,7 +502,9 @@
 <!-- Javascript -->
 
 <!-- JavaScript Bundle with Popper -->
-
+<script src="assets/js/three.js"></script>
+<script src="assets/js/panolens.js"></script>
+<script src="assets/js/main2.js"></script>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
