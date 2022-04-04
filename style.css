@@ -6322,7 +6322,7 @@ support for no js
 
 }
 @media only screen and (max-width: 767px) {
-  .logo-contin {
+  #panorama{
    height:500px;
   }
 
