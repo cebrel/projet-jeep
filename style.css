@@ -6332,6 +6332,12 @@ support for no js
   }
 
 }
+@media only screen and (max-width: 767px) {
+  .section-bg{
+   background-image: url('assets/img/slider/wrangler-model.jpg');
+  }
+
+}
 .col-o{
   color:#041244;
 }
