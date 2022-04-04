@@ -1407,7 +1407,12 @@ table.table col:nth-child(odd) { background-color: #f8f8f8; }
   width: 100%;
   height: 700px;
 }
-
+@media only screen and (max-width: 767px){
+  #container,#progress {
+    
+    height: 500px;
+  }
+}
 #desc-container {
   max-width: 250px;
   max-height: 200px;
