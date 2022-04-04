@@ -37,19 +37,19 @@ var panorama, panorama2,panorama3, viewer, container, infospot1,infospot2,infosp
 
   infospot1 = new PANOLENS.Infospot( 200, PANOLENS.DataImage.Info);
   infospot1.position.set( -3000.00, -1825.25, -1400 );
-  infospot1.addHoverElement(document.getElementById('desc-container'), 150);
+  infospot1.addHoverElement(document.getElementById('desc-container'), 50);
   panorama.add(infospot1);
 
   infospot2 = new PANOLENS.Infospot(20, PANOLENS.DataImage.Info);
   infospot2.position.set(400,-120, 200);
-  infospot2.addHoverElement(document.querySelector('.volant'), 150);
+  infospot2.addHoverElement(document.querySelector('.volant'), 50);
     
   
   panorama2.add(infospot2);
 
   infospot3 = new PANOLENS.Infospot(200,PANOLENS.DataImage.Info);
   infospot3.position.set(-3200, -1200, -3000);
-  infospot3.addHoverElement(document.querySelector('.turbo'), 150);
+  infospot3.addHoverElement(document.querySelector('.turbo'), 100);
 
   
     
@@ -58,17 +58,17 @@ var panorama, panorama2,panorama3, viewer, container, infospot1,infospot2,infosp
 
   infospot4 = new PANOLENS.Infospot(100,'assets/img/rond.png');
   infospot4.position.set(200.00, -650, -1400);
-  infospot4.addHoverElement(document.querySelector('.pneu'), 150);
+  infospot4.addHoverElement(document.querySelector('.pneu'), 50);
   panorama.add(infospot4);
 
-  infospot5 = new PANOLENS.Infospot(140,'/assets/img/touche.png');
+  infospot5 = new PANOLENS.Infospot(140,'assets/img/touche.png');
   infospot5.position.set(-50.00, -190, -1400);
-  infospot5.addHoverElement(document.querySelector('.feu'), 150);
+  infospot5.addHoverElement(document.querySelector('.feu'), 50);
   panorama.add(infospot5);
 
-  infospot6 = new PANOLENS.Infospot(140,'assets/img/touche.png');
+  infospot6 = new PANOLENS.Infospot(140,'assets/img/touch.png');
   infospot6.position.set(1450.00, -225, -1400);
-  infospot6.addHoverElement(document.querySelector('.retro'), 150);
+  infospot6.addHoverElement(document.querySelector('.retro'), 50);
   panorama.add(infospot6);
 
   viewer = new PANOLENS.Viewer({

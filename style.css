@@ -1444,7 +1444,8 @@ table.table col:nth-child(odd) { background-color: #f8f8f8; }
 }
 .infospoto{
   padding: 5px;
-  height: 75%;
+  max-height: 50%;
+  
 }
 
 #progress.finish {
