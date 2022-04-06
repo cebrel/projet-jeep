@@ -670,6 +670,9 @@ var productViewer = new ProductViewer ({
     ProductViewer.animate360();
   })
 // change-color
+
+
+
 function change1()
 	{
 
@@ -703,6 +706,13 @@ document.getElementById('pic').src='./assets/images-color/jeep5.jpg';
 document.getElementById('pic').src='./assets/images-color/jeep6.jpg';
 
 	};
+    function change6()
+	{
+
+document.getElementById('pic').src='./assets/images-color/jeep1.jpg';
+
+	};
+   
   
     
 	

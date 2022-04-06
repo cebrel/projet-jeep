@@ -184,7 +184,7 @@ input[type="submit"]:hover,
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
-input[type="submit"]:focus { outline: 0; background-color: #041244; }
+input[type="submit"]:focus { outline: 0; }
 
 /* Placeholder color */
 ::-webkit-input-placeholder { color: #B12214; }
@@ -6357,53 +6357,74 @@ support for no js
   width: 100%;
 	text-align: center;
 }
-#btn1{
-	width: 50px;
-	height: 50px;
+.btn1{
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: #F4F6F5	;
 	border: 1px solid #3e3e3e;
   padding: 0 0;
 
 }
-#btn2{
-	width: 50px;
-	height: 50px;
+
+
+.btn2{
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: #5B5C5E;
 	border: 1px solid #3e3e3e;
   padding: 0 0;
 
 }
-#btn3{
-	width: 50px;
-	height: 50px;
+.btn3{
+  width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: #B14924 ;
 	border: 1px solid #3e3e3e;
   padding: 0 0;
 
 }
-#btn4{
-	width: 50px;
-	height: 50px;
+.btn4{
+  width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: #002C5B ;
 	border: 1px solid #3e3e3e;
   padding: 0 0;
 
 }
-#btn5{
-	width: 50px;
-	height: 50px;
+.btn5{
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: #E0BD00  ;
 	border: 1px solid #3e3e3e;
   padding: 0 0;
 }
+.btn6{
+  width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #B70302  ;
+	border: 1px solid #3e3e3e;
+  padding: 0 0;
+}
+.active-btn ,.bt:hover{
+  width: 45px;
+	height: 45px;
+  border: 2px solid #3e3e3e;
+  
+}
 .btn-style{
   margin-bottom: 50px;
   
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: center;
   
 }
 .pnlm-about-msg {

@@ -397,21 +397,27 @@
             
         
           <img id="pic" src="./assets/images-color/jeep1.jpg" >
-        
-        
-        
-        
-        
-        
-        <div class="btn-style text-center">
-          <button id="btn1" onclick="change1()"></button>
-          <button id="btn2"  onclick="change2()"></button>
-          <button  id="btn3" onclick="change3()"></button>
-          <button id="btn4" onclick="change4()"></button>
-          <button  id="btn5" onclick="change5()"></button>
-        
+       
+        <div id="myDiv" class="btn-style text-center">
+          <button  class="bt  btn1 " onclick="change1()"></button>
+          <button  class="bt btn2 " onclick="change2()"></button>
+          <button  class="bt btn3" onclick="change3()"></button>
+          <button class="bt btn4" onclick="change4()"></button>
+          <button  class="bt btn5" onclick="change5()"></button>
+          <button  class="bt btn6 active-btn" onclick="change6()"></button>
         
         </div>
+        <script>
+               var header = document.getElementById("myDiv");
+var btns = header.getElementsByClassName("bt");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active-btn");
+  current[0].className = current[0].className.replace("active-btn", "");
+  this.className += " active-btn";
+  });
+}
+        </script>
     </div>
     <div class="col-md-6 margin-top-10">
         <h3 class="section-title text-center">Available colors</h3>
